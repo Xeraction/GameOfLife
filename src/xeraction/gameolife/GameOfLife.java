@@ -22,6 +22,13 @@ public class GameOfLife implements Runnable {
                 running = !running;
                 return true;
             }
+            if (e.getID() == KeyEvent.KEY_RELEASED && e.getKeyCode() == KeyEvent.VK_R) {
+                running = false;
+                Board.loadBoard();
+                screen.drawBoard();
+                frame.repaint();
+                return true;
+            }
             return false;
         });
         frame.setVisible(true);
