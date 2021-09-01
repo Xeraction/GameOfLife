@@ -24,7 +24,7 @@ public class Screen extends JPanel {
                 else {
                     g2.setColor(Color.WHITE);
                 }
-                g2.fillRect(j * 4, i * 4, 4, 4);
+                g2.fillRect(j * 4 + j, i * 4 + i, 4, 4);
             }
         }
     }

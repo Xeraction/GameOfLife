@@ -13,7 +13,7 @@ public class GameOfLife implements Runnable {
         Board.loadBoard();
         frame = new JFrame("Game of Life");
         frame.add(screen);
-        frame.setSize(416, 439);
+        frame.setSize(516, 539); //416 439
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
